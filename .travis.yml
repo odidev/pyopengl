@@ -4,6 +4,10 @@ python:
     - "3.6"
     - "3.7"
 
+arch:
+    - amd64
+    - arm64
+
 install:
     - pip install pygame numpy cython pytest psutil
     - pip install ./accelerate
@@ -27,6 +31,7 @@ addons:
         - libgl1-mesa-dri
         - libsdl1.2-dev
         - libfreetype6-dev
+        - xvfb
 
 before_install:
   - sudo apt-get update -qq -y
