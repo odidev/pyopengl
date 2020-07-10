@@ -9,7 +9,7 @@ arch:
     - arm64
 
 install:
-    - pip install pygame numpy cython pytest psutil
+    - pip install numpy cython pytest psutil
     - pip install ./accelerate
     - pip install .
 
