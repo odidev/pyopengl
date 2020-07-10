@@ -9,7 +9,7 @@ arch:
     - arm64
 
 install:
-    - pip install numpy cython pytest psutil
+    - pip install pygame numpy cython pytest psutil
     - pip install ./accelerate
     - pip install .
 
@@ -32,6 +32,7 @@ addons:
         - libsdl1.2-dev
         - libfreetype6-dev
         - xvfb
+        - libsdl1.2-dev
 
 before_install:
   - sudo apt-get update -qq -y
